@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    background-color: rgb(76, 72, 69);
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#content-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align elements to the top */
+    align-items: center;
+    width: 100%; /* Ensures it takes up the full width of the page */
+    height: auto; /* Allows content to grow as needed */
+}
+
+#auth-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#game-title {
+    text-align: center;
+    color: #04d4bc;
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px; /* Fixed width matching your Phaser canvas */
+    height: 600px; /* Fixed height matching your Phaser canvas */
+    border: 7.5px solid #e3f8a3; /* Border around the game */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    margin-bottom: 20px; /* Adds space between game and leaderboard */
+}
+
+canvas {
+    display: block;
+    border: 5px solid #3d67c1;
+    border-radius: 18px;
+    box-shadow: 0px 0px 30px rgba(0,0,0,.5);
+}
+
+#leaderboard-title {
+    text-align: center;
+    color: #04d4bc;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#leaderboard-stats {
+    width: 400px;
+    background-color: white;
+    border: 4px solid #e3f8a388;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5rem;
+}
+
+#leaderboard-stats p {
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#login-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
