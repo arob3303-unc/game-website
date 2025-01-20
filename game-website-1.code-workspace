@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "game-website-1",
+			"path": "."
+		},
+		{
+			"name": "assets",
+			"path": "../game-website/assets"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "game-website-1"
+	}
+}
